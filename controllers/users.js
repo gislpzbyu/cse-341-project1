@@ -20,12 +20,14 @@ result.toArray().then((users) => {
 };
 
 const createUser = async (req, res) => {
+
+    console.log('body', req.body);
+
     const user = {
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
+        username: req.body.username,
         email: req.body.email,
-        favoriteColor: req.body.favoriteColor,
-        birthday: req.body.birthday
+        name: req.body.name,
+        ipaddress: req.body.ipaddress
     };
     const response = await mongodb.getDatabase().db().collection('users').insertOne(user);
     if (response.modifiedCount > 0) {

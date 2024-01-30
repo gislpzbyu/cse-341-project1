@@ -8,12 +8,12 @@ GET http://localhost:3000/users/65ada6ca78b5059d07a6f64d
 
 
 ### Create contact
-POST http://localhost:3000/users/ HTTP/1.1
+POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
 
 {
-  "email": "test@aaa.com",
-  "username": "aaa@aaa.com",
+  "email": "test5@example.com",
+  "username": "test5@test.com",
   "name": "John",
   "ipaddress": "94.121.168.53"
 }
@@ -24,8 +24,8 @@ PUT http://localhost:3000/users/65ada6ca78b5059d07a6f64d HTTP/1.1
 content-type: application/json
 
 {
-  "email": "test@aaa.com",
-  "username": "aaa@aaa.com",
+  "email": "test5@example.com",
+  "username": "test5@test.com",
   "name": "John",
   "ipaddress": "94.121.168.53"
 }
